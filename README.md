@@ -15,7 +15,7 @@ HyperCSS is compatible with phones, tablets and computers!
 First, you need to import the CSS file into your website head :
 
 ```html
-<link rel="stylesheet" src="https://n0ct3ri4.github.com/hcss.css" />
+<link rel="stylesheet" src="https://n0ct3ri4.github.io/hcss.css" />
 ```
 
 Then, read the docs!
