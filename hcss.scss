@@ -1,12 +1,12 @@
 // Imports
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Ubuntu&family=Lato&display=swap");
 
 // Variables
 $link: rgb(120, 144, 240);
-$blue: rgb(58, 132, 181);
-$green: rgb(109, 208, 79);
-$red: rgb(242, 117, 117);
-$grey: rgb(199, 199, 199);
+$blue: rgb(73, 172, 238);
+$green: rgb(121, 237, 86);
+$red: rgb(209, 84, 84);
+$grey: rgb(170, 170, 170);
 $dark: rgb(49, 49, 49);
 $dark-bis: rgb(60, 60, 60);
 $dark-ter: rgb(68, 68, 68);
@@ -21,6 +21,10 @@ html {
   a {
     text-decoration: none;
     color: $link;
+  }
+
+  img {
+    display: block;
   }
 
   h1,
@@ -41,10 +45,67 @@ html {
     font-family: "Roboto", sans-serif;
   }
 
+  p {
+    padding: 1%;
+    font-family: "Lato", sans-serif;
+  }
+
   // Flex
 
   .flex {
     display: flex;
+  }
+
+  .f-auto {
+    flex: auto;
+  }
+
+  .f-1 {
+    flex: auto;
+  }
+
+  .f-2 {
+    flex: auto;
+  }
+
+  .f-3 {
+    flex: auto;
+  }
+
+  .f-01 {
+    flex: 0.1;
+  }
+
+  .f-02 {
+    flex: 0.2;
+  }
+
+  .f-03 {
+    flex: 0.3;
+  }
+
+  .f-04 {
+    flex: 0.4;
+  }
+
+  .f-05 {
+    flex: 0.5;
+  }
+
+  .f-06 {
+    flex: 0.6;
+  }
+
+  .f-07 {
+    flex: 0.7;
+  }
+
+  .f-08 {
+    flex: 0.8;
+  }
+
+  .f-09 {
+    flex: 0.9;
   }
 
   .fd-row {
@@ -80,6 +141,10 @@ html {
   }
 
   // Margin
+
+  .m-0 {
+    margin: 0;
+  }
 
   .m-1 {
     margin: 1em;
@@ -183,6 +248,10 @@ html {
 
   // Padding
 
+  .p-0 {
+    padding: 0;
+  }
+
   .p-1 {
     padding: 1em;
   }
@@ -283,7 +352,7 @@ html {
     padding-right: 5em;
   }
 
-  // Header
+  // Head & Foot
 
   .header {
     display: flex;
@@ -309,6 +378,33 @@ html {
     }
 
     background: rgb(230, 230, 230);
+    padding: 2%;
+  }
+
+  .footer {
+    display: flex;
+
+    &.shadow {
+      box-shadow: rgba($color: #000000, $alpha: 0.12) 0 -0.5em 5mm;
+    }
+
+    &.large {
+      height: 20em;
+    }
+
+    &.medium {
+      height: 15em;
+    }
+
+    &.small {
+      height: 10em;
+    }
+
+    &.tiny {
+      height: 5em;
+    }
+
+    background: rgb(218, 218, 218);
     padding: 2%;
   }
 
@@ -361,6 +457,36 @@ html {
   .bg-dark-ter {
     background: $dark-ter;
     color: white;
+  }
+
+  // Text colors
+
+  .green {
+    color: $green;
+  }
+
+  .red {
+    color: $red;
+  }
+
+  .blue {
+    color: $blue;
+  }
+
+  .grey {
+    color: $grey;
+  }
+
+  .dark {
+    color: $dark;
+  }
+
+  .dark-bis {
+    color: $dark-bis;
+  }
+
+  .dark-ter {
+    color: $dark-ter;
   }
 
   // Navigation bar
@@ -417,6 +543,40 @@ html {
       box-shadow: rgba($color: #000000, $alpha: 0.12) 1mm 1mm 3.5mm;
     }
   }
+
+  // Sizes
+
+  .w25 {
+    width: 25%;
+  }
+
+  .w50 {
+    width: 50%;
+  }
+
+  .w75 {
+    width: 75%;
+  }
+
+  .w100 {
+    width: 100%;
+  }
+
+  .h25 {
+    height: 25%;
+  }
+
+  .h50 {
+    height: 50%;
+  }
+
+  .h75 {
+    height: 75%;
+  }
+
+  .h100 {
+    height: 100%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -447,6 +607,10 @@ html {
   }
   h6 {
     font-size: 1.13em;
+  }
+
+  p {
+    padding: 0;
   }
 }
 
